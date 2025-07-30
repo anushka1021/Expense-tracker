@@ -12,6 +12,7 @@ function addExpense() {
     const li = document.createElement("li");
     li.textContent = `${title}: Rs${amount}`;
 
+    // Milestone 3 : Delete feature
     const deleteBtn = document.createElement("button");
     deleteBtn.textContent = "DELETE ITEM";
     deleteBtn.style.marginLeft = "10px";
