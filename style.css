@@ -1,0 +1,29 @@
+
+body{
+    font-family: Ariel, sans-serif;
+    margin: 40px;
+    background: #f9f9f9
+}
+
+input, button {
+    padding: 8px;
+    margin:5px;
+}
+
+button {
+    background-color : teal;
+    color: white;
+    border: none;
+}
+
+ul {
+    list-style: none;
+    padding:0;
+}
+
+li {
+    margin : 10px 0;
+    padding : 8px;
+    background : #eee;
+}
+
