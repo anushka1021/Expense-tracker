@@ -12,6 +12,17 @@ function addExpense() {
     const li = document.createElement("li");
     li.textContent = `${title}: Rs${amount}`;
 
+    const deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "DELETE ITEM";
+    deleteBtn.style.marginLeft = "10px";
+
+    deleteBtn.onclick = function () {
+        li.remove();
+        total -= amount;
+        document.getElementById("total").textContent = total;
+    };
+    li.appendChild(deleteBtn);
+
     document.getElementById("expenseList").appendChild(li);
 
     document.getElementById("total").textContent=total;
